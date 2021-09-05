@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/LoginPage.css">
+    </head>
+    <body>
+    	<div class="main-background">
+    		<div class="login-box">
+    			<img src="pics/avatar.png" class="avatar"/>
+    			<div class="button-box">
+    				<div id="btn"></div>
+    				<button type="button" class="toggle-btn" onclick="results()">Results</button>
+    				<button type="button" class="toggle-btn" onclick="admin()">Admin</button>	
+    			</div>
+    			<div class="d-flex flex-row justify-content-center">
+    			<form id="results" class="input-group" action="connect.php" method="post">
+    				<input type="text" class="input-field" placeholder="Enter Roll No." name="rollid">
+    				<input type="text" class="input-field" placeholder="Enter Class" name="classid">
+    				<button type="submit" class="submit-btn">Get Results</button>
+    			</form>
+    			</div>
+    			    <form id="admin" class="input-group" action="Admin.php" method="post">
+    				<input type="text" class="input-field" placeholder="Username" name="UserName">
+    				<input type="password" class="input-field" placeholder="Password" name="Password">
+    				<button type="submit" class="submit-btn">Login</button>
+    			</form>
+    		</div>
+    	</div>
+     
+  <script>
+  	var x = document.getElementById("results");
+  	var y = document.getElementById("admin");
+  	var z = document.getElementById("btn");
+
+  	function admin(){
+  		x.style.left = "-400px";
+  		y.style.left = "50px";
+  		z.style.left = "115px";
+  	}
+  	function results(){
+  	x.style.left = "50px";
+  	y.style.left = "450px";
+  	z.style.left = "0px";
+  	}
+  </script>
+  </body>
+</html>

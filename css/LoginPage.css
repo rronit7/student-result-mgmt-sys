@@ -1,0 +1,94 @@
+*{
+	font-family: sans-serif;
+}
+
+
+.main-background{
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(backgroundpic.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+}
+
+.login-box{
+	height: 480px;
+	width: 380px;
+	position: relative;
+	margin: 8% auto;
+	background: #fff;
+	padding: 5px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.button-box{
+	width: 230px;
+	margin: 110px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 115px;
+	height: 100%;
+	background: linear-gradient(to right, #ff105f,#ffad06);
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group{
+	top: 180px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+	text-align: center;
+	margin-top: 25px;
+}
+.input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, #ff105f,#ffad06);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	margin-top: 50px;
+}
+#login{
+	left: 50px;
+}
+#admin{
+	left: 450px;
+}
+.avatar{
+	width: 100px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 135px;
+	margin-top: 10px;
+}
