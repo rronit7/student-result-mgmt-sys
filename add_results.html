@@ -60,7 +60,7 @@
   </head>
   <body>
     <form action="add_results.php" method="POST">
-      <h1>Add and Update Results</h1>
+      <h1>Add Results</h1>
       <div class="formcontainer">
       <hr/>
       <div class="container">
@@ -74,9 +74,11 @@
         <input type="text" name="Marks" required>
       </div>
       <form action="add_results.php" method="POST">
-      <button type="submit">Update</button>
+      <button type="submit">Add</button>
       </form>
-      <button type="submit">Go back</button>
+      <form action="update_results.html" method="POST">
+      <button type="submit">Open Update Section</button>
+      </form>
       <div class="container" style="background-color: #eee">
       </div>
     </form>

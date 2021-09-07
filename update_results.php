@@ -3,15 +3,17 @@
     include('session.php');
 
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $sid = $_POST['StudentId'];
+        $classid = $_POST['ClassId'];
         $subid = $_POST['SubjectId'];
-        $subname = $_POST['SubjectName'];
+        $marks = $_POST['Marks'];
+        
     }
-    $sql = "INSERT INTO `tblsubjects` (`SubjectId`, `SubjectName`) VALUES ('$subid', '$subname')";
+    $sql = "UPDATE `tblresult` SET `Marks` = '$marks' WHERE `tblresult`.`SubjectId` = '$subid'";
     
     if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully!";
+    echo "Record updated successfully!";
     } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
     }
-
 ?>

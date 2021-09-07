@@ -60,7 +60,7 @@
   </head>
   <body>
     <form action="add_subjects.php" method="POST">
-      <h1>Add and Update Subjects</h1>
+      <h1>Add Subjects</h1>
       <div class="formcontainer">
       <hr/>
       <div class="container">
@@ -70,9 +70,11 @@
         <input type="text" name="SubjectName" required>
       </div>
       <form action="add_subjects.php" method="POST">
-      <button type="submit">Update</button>
+      <button type="submit">Add</button>
       </form>
-      <button type="submit">Go back</button>
+      <form action="update_subjects.html" method="POST"> 
+      <button type="submit">Open Update Section</button>
+      </form>
       <div class="container" style="background-color: #eee">
       </div>
     </form>

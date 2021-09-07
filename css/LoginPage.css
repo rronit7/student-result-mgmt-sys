@@ -4,7 +4,7 @@
 
 
 .main-background{
-	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(backgroundpic.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("backgroundpic.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 100vh;

@@ -6,10 +6,10 @@
         $subid = $_POST['SubjectId'];
         $subname = $_POST['SubjectName'];
     }
-    $sql = "INSERT INTO `tblsubjects` (`SubjectId`, `SubjectName`) VALUES ('$subid', '$subname')";
+    $sql = "UPDATE `tblsubjects` SET `SubjectName` = '$subname' WHERE `tblsubjects`.`SubjectId` = '$subid'";
     
     if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully!";
+    echo "Record updated successfully!";
     } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
     }
